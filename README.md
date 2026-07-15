@@ -17,3 +17,6 @@ A Java-based HTTP server developed as part of a software engineering project.
 - Reflection
 - Design Patterns
 - Git
+
+##Team
+Developed as a team project with Tamar Perets.
