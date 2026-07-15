@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computational Graph</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; }
+        #network-container { width: 100%; height: 100%; border: none; }
+    </style>
+</head>
+<body>
+    <div id="network-container"></div>
+
+    <script type="text/javascript">
+        var nodes = new vis.DataSet([
+            // DYNAMIC_NODES_HERE
+        ]);
+
+        var edges = new vis.DataSet([
+            // DYNAMIC_EDGES_HERE
+        ]);
+
+        var container = document.getElementById('network-container');
+        var data = { nodes: nodes, edges: edges };
+
+        var options = {
+            nodes: {
+                font: { size: 16 }
+            },
+            edges: {
+                arrows: "to"
+            },
+            physics: {
+                enabled: true
+            }
+        };
+
+        var network = new vis.Network(container, data, options);
+    </script>
+</body>
+</html>
